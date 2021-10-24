@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/LabsAdemy/CypressOctubre/issues"
   },
-  "homepage": "https://github.com/LabsAdemy/CypressOctubre#readme"
+  "homepage": "https://github.com/LabsAdemy/CypressOctubre#readme",
+  "dependencies": {
+    "cypress": "^8.6.0"
+  }
 }
