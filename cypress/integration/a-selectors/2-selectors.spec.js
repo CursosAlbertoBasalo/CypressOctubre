@@ -32,6 +32,7 @@ describe('The budget home page', () => {
   });
 
   it('should have the app name on the title', () => {
+
     cy.title().should('contain', 'Budget');
   })
 
@@ -84,7 +85,6 @@ describe('GIVEN a product feature ', () => {
 
     });
     it('THEN should have a behavior ', () => {
-
     });
   });
 });
