@@ -1,0 +1,19 @@
+{
+  "github.copilot.enable": {
+    "*": false
+  },
+  "window.zoomLevel": 2,
+  "editor.lineNumbers": "off",
+  "spellright.language": [
+    "en",
+    "es"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "html",
+    "typescript",
+    "javascript"
+  ]
+}
