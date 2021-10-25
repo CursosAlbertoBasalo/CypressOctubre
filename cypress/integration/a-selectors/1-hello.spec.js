@@ -8,7 +8,7 @@ describe('My first test', () => {
     // act assert
     cy.visit('https://angularbuilders.github.io/angular-budget/')
     cy.contains('Budget')
-    cy.get('pre').should('contain', 'Budget')
+    cy.get('a').should('contain', 'Budget')
   })
 });
 

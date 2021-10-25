@@ -1,0 +1,56 @@
+{
+  "Cypress it should": {
+    "prefix": "cy-it",
+    "body": [
+      "it('should do something', () => {",
+      "\t$1",
+      "})"
+    ],
+    "description": "Creates an empty it function"
+  },
+  "Cypress before": {
+    "prefix": "cy-b",
+    "body": [
+      "before(() => {",
+      "\t$1",
+      "})"
+    ],
+    "description": "Creates an empty function to run beafore all tests in a suite"
+  },
+  "Cypress before each": {
+    "prefix": "cy-b-e",
+    "body": [
+      "beforeEach(() => {",
+      "\t$1",
+      "})"
+    ],
+    "description": "Creates an empty function to run beafore each test in a suite"
+  },
+  "Cypres describe it should": {
+    "prefix": "cy-d-it",
+    "body": [
+      "describe('an scenario', () => {",
+      "\tit('should do something', () => {",
+      "\t\t$1",
+      "\t})",
+      "})"
+    ],
+    "description": "Creates a simple describe it function"
+  },
+  "Cypress Given When Then": {
+    "prefix": "cy-gwt",
+    "body": [
+      "describe('GIVEN a product feature $1', () => {",
+      "\tcontext('WHEN an scenario $2', () => {",
+      "\t\tbefore(() => {",
+      "\t\t\t$4",
+      "\t\t});",
+      "\t\tit('THEN should have a behavior $3', () => {",
+      "\t\t\t$5",
+      "\t\t});",
+      "\t});",
+      "});"
+    ],
+    "description": "Scaffold a Behavior Driven Development test with Cypress"
+  }
+}
