@@ -37,12 +37,6 @@ describe('The budget home page', () => {
 
 })
 
-
-// Arrange Act Assert
-
-//
-
-
 describe('GIVEN the home page ', () => {
   context('WHEN search for the title brand ', () => {
     before(() => {
@@ -53,3 +47,55 @@ describe('GIVEN the home page ', () => {
     });
   });
 });
+
+
+// ✅ Considere using snippets
+
+// cy-b
+before(() => {
+
+})
+// cy-b-e
+beforeEach(() => {
+
+})
+// cy-it
+it('should do something', () => {
+
+})
+// cy-d-it
+describe('an scenario', () => {
+  it('should do something', () => {
+
+  })
+})
+it('should do something', () => {
+
+})
+
+// ✅ Considere use a more readable tests suite
+// Applying the Given, When, Then pattern
+// Inspired from Behavior Driven Development
+
+// cy-gwt
+describe('GIVEN a product feature ', () => {
+  context('WHEN an scenario ', () => {
+    before(() => {
+
+    });
+    it('THEN should have a behavior ', () => {
+
+    });
+  });
+});
+
+// ❌ Avoid test jargon
+// sut, input, actual, expected
+// Too formal for cypress
+
+
+// 📋 To do:
+// - there are an h1 with page title
+// - there are link to about page
+// - there are a footer with doc-credits
+
