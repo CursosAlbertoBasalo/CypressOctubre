@@ -35,8 +35,11 @@ describe('GIVEN a user navigated to _login_ page', () => {
 
 describe('GIVEN the login form filled ', () => {
   before(() => {
+
     cy.visit('/')
     cy.get('a[href$=login]').click()
+  })
+  beforeEach(() => {
     cy.get('input[name=email]').type('invalid@world.org')
     cy.get('input[name=password]').type('invalidPassword')
   })
@@ -47,6 +50,15 @@ describe('GIVEN the login form filled ', () => {
     it('THEN should clear inputs ', () => {
       cy.get('input[name=email]').should('be.empty')
       cy.get('input[name=password]').should('be.empty')
+    });
+  });
+  context('WHEN click on _login_ button ', () => {
+    before(() => {
+      cy.wait(5000)
+      cy.get('button[type=submit]').click()
+    });
+    it('THEN should display not found message', () => {
+      cy.get('aside').contains('Not found')
     });
   });
 });
