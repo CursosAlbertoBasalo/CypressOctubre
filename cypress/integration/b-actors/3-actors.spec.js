@@ -36,8 +36,10 @@
 describe('GIVEN the login form filled ', () => {
   before(() => {
     cy.log('GIVEN before ')
-    cy.visit('/')
-    cy.get('a[href$=login]').click()
+    cy.visit('/login', {
+      failOnStatusCode: Cypress.env('failOnStatusCode')
+    })
+    //cy.get('a[href$=login]').click()
   })
   beforeEach(() => {
     cy.log('GIVEN beforeEach ')
