@@ -1,1 +1,5 @@
-{}
+{
+  "baseUrl": "https://angularbuilders.github.io/angular-budget/",
+  "viewportWidth": 1240,
+  "viewportHeight": 740
+}

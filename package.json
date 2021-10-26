@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/LabsAdemy/CypressOctubre#readme",
   "dependencies": {
-    "cypress": "^8.6.0"
+    "cypress": "^8.7.0"
   }
 }
