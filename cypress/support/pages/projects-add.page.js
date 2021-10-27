@@ -13,8 +13,8 @@ export class ProjectsAddPage {
   }
 
   fillCorrectly() {
-    cy.fixture('new-project.json').
-      then(function (newProject) {
+    cy.fixture('new-project'). // load input data from json file
+      then((newProject) => {
         cy.get('input[name=name]').type(newProject.name);
         cy.get('input[name=budget]').type(newProject.budget);
         cy.get('input[name=startDate]').type(newProject.starDate);
@@ -26,6 +26,7 @@ export class ProjectsAddPage {
     cy.get('input[name=budget]').clear();
     cy.get('input[name=startDate]').clear();
   }
+
 
   getResetButton() {
     return cy.get('button[type=reset]');
@@ -42,5 +43,8 @@ export class ProjectsAddPage {
   submitForm() {
     this.getSubmitButton().click();
   }
+
+
+  // To do: implement getters for every control
 
 }

@@ -9,10 +9,10 @@ export class AboutPage {
   }
 
   constructor() {
-    this.visit()
+    this.visit();
   }
 
   getTitle() {
-    return cy.get('.title')
+    return cy.get('.title');
   }
 }

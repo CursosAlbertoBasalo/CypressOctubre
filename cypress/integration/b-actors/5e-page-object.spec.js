@@ -8,19 +8,20 @@ describe('GIVEN a user that goes to the _projects add_ page ', () => {
     cy.contains('Add new project').click();
   })
   context('WHEN fills the form correctly', () => {
-    let projectsAddPage;
+    let projectsAddPage; // context scoped
     before(() => {
       projectsAddPage = new ProjectsAddPage();
-      projectsAddPage.fillCorrectly();
+      projectsAddPage.fillCorrectly(); // abstracted features
     });
     it('THEN should be able to submit ', () => {
-      projectsAddPage.getSubmitButton().should('be.enabled');
+      projectsAddPage.getSubmitButton() // abstracted internals
+        .should('be.enabled');
     });
   });
 });
 
 describe('GIVEN a _projects add_ form already filled ', () => {
-  let projectsAddPage;
+  let projectsAddPage; // use case scoped
   beforeEach(() => {
     projectsAddPage = new ProjectsAddPage();
     projectsAddPage.visit();
@@ -36,7 +37,7 @@ describe('GIVEN a _projects add_ form already filled ', () => {
   });
   context('WHEN the user clears the form', () => {
     beforeEach(() => {
-      projectsAddPage.resetForm()
+      projectsAddPage.resetForm();
     });
     it('THEN should not allow submit ', () => {
       projectsAddPage.getSubmitButton().should('be.disabled');
