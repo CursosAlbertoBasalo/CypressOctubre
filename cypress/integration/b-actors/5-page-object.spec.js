@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { AboutPage } from "../../support/pages/about-page";
+import { AboutPage } from "../../support/pages/about.page";
 
 describe('GIVEN the "about"  page ', () => {
   let aboutPage;
