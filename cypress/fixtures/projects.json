@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "id": "rule_the_world",
+      "name": "Rule the world",
+      "description": "Take over the worlds",
+      "startDate": "2019-12-31",
+      "endDate": "2024-12-30",
+      "budget": 5000,
+      "status": "active",
+      "ownerId": "world_admin"
+    },
+    {
+      "id": "conquer_mars",
+      "name": "Conquer Mars",
+      "description": "Establish a civilization on Mars",
+      "startDate": "2021-12-31",
+      "budget": 99000,
+      "status": "planned",
+      "ownerId": "world_admin"
+    }
+  ]
+}
