@@ -23,6 +23,7 @@ describe('GIVEN a user that goes to the _projects add_ page ', () => {
 describe('GIVEN a _projects add_ form already filled ', () => {
   let projectsAddPage; // use case scoped
   beforeEach(() => {
+    // Arrange
     projectsAddPage = new ProjectsAddPage();
     projectsAddPage.visit();
     projectsAddPage.fillCorrectly();
@@ -30,6 +31,7 @@ describe('GIVEN a _projects add_ form already filled ', () => {
   context('WHEN the user submits the form', () => {
     beforeEach(() => {
       projectsAddPage.submitForm();
+      //projectsAddPage.getSubmitButton().click();
     });
     it('THEN should change the location ', () => {
       cy.location('pathname').should('not.contain', 'add');

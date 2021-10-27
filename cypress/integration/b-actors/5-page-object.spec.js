@@ -9,7 +9,7 @@ describe('GIVEN the "about"  page ', () => {
   })
   context('WHEN I visit it  ', () => {
     beforeEach(() => {
-
+      aboutPage.visit();
     });
     it('THEN should display "About" as the title ', () => {
       aboutPage.getTitle().should('contain', 'About'); // clean use
