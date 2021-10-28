@@ -8,7 +8,7 @@ describe('WHEN: make a get _projects_ request', () => {
   })
 })
 
-describe('WHEN: make a delete reques', () => {
+describe('WHEN: make a delete request', () => {
   it('THEN: should get either a _not authenticated_ a _deleted_ or _not found_ response', () => {
     cy.request({
       method: 'DELETE',
