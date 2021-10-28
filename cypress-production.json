@@ -1,0 +1,14 @@
+{
+  "baseUrl": "https://angularbuilders.github.io/angular-budget/",
+  "viewportWidth": 1240,
+  "viewportHeight": 740,
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "videosFolder": "cypress/reports/videos",
+  "video": false,
+  "videoCompression": 48,
+  "env": {
+    "failOnStatusCode": false,
+    "apiUrl": "https://proton-angular-builders.herokuapp.com/v1/",
+    "production": true
+  }
+}

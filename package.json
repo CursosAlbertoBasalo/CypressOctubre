@@ -4,6 +4,7 @@
   "description": "Laboratorio curso e2e cypress vitae",
   "main": "index.js",
   "scripts": {
+    "start": "cypress run -C cypress-production.json > cypress/reports/results.txt",
     "test": "cypress open"
   },
   "repository": {

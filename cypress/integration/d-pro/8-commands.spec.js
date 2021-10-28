@@ -17,6 +17,7 @@ describe('GIVEN an authenticated user ', () => {
       projectsAddPage.submitForm();
     });
     it('THEN should send auth token', () => {
+
       cy.wait('@postProject').its('request.headers.authorization').should('contain', 'Bearer ');
     })
     it('THEN should be redirected to home ', () => {
