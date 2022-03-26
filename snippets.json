@@ -15,7 +15,7 @@
       "\t$1",
       "})"
     ],
-    "description": "Creates an empty function to run beafore all tests in a suite"
+    "description": "Creates an empty function to run before all tests in a suite"
   },
   "Cypress before each": {
     "prefix": "cy-b-e",
@@ -24,9 +24,9 @@
       "\t$1",
       "})"
     ],
-    "description": "Creates an empty function to run beafore each test in a suite"
+    "description": "Creates an empty function to run before each test in a suite"
   },
-  "Cypres describe it should": {
+  "Cypress describe it should": {
     "prefix": "cy-d-it",
     "body": [
       "describe('an scenario', () => {",
